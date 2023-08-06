@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_hello"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hello world"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bt_use_viewmodel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="打开ViewModel页面"
+        app:layout_constraintTop_toBottomOf="@+id/tv_hello"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bt_use_coroutines"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="打开coroutines页面"
+        app:layout_constraintTop_toBottomOf="@+id/bt_use_viewmodel"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bt_handwriting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="打开handwriting页面"
+        app:layout_constraintTop_toBottomOf="@+id/bt_use_coroutines"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bt_handwriting2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="打开handwriting2页面"
+        app:layout_constraintTop_toBottomOf="@+id/bt_handwriting"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
